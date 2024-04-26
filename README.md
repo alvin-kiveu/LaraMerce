@@ -1,4 +1,9 @@
-# LaraMerce - Revolutionizing Admin Panel Development
+# LaraMerce - Revolutionizing Ecommerce CMS
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/LaraMerce/LaraMerce.svg?style=flat-square)](https://packagist.org/packages/LaraMerce/LaraMerce)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/LaraMerce/LaraMerce/Tests?label=tests)](
+[![Total Downloads](https://img.shields.io/packagist/dt/LaraMerce/LaraMerce.svg?style=flat-square)](https://packagist.org/packages/LaraMerce/LaraMerce)
+
 
 ![LaraMerce Banner](public/images/LaraLMerce_github_banner.png)
 
