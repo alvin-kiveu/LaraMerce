@@ -1,9 +1,5 @@
 # LaraMerce - Revolutionizing Ecommerce CMS
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/LaraMerce/LaraMerce.svg?style=flat-square)](https://packagist.org/packages/LaraMerce/LaraMerce)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/LaraMerce/LaraMerce/Tests?label=tests)](https://github.com/LaraMerce/LaraMerce/actions)
-[![Total Downloads](https://img.shields.io/packagist/dt/LaraMerce/LaraMerce.svg?style=flat-square)](https://packagist.org/packages/LaraMerce/LaraMerce)
-
 ![LaraMerce Banner](public/images/LaraLMerce_github_banner.png)
 
 Welcome to LaraMerce – the dynamic and innovative Laravel-based eCommerce CMS, designed to empower businesses with a seamless online selling experience.
