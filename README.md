@@ -11,6 +11,9 @@ LaraMerce simplifies the management of plugins, themes, dashboards, menus, widge
 ### Vibrant Community
 Join a thriving community of developers and enthusiasts who contribute to LaraMerce's evolution. Benefit from the collective knowledge and experience of fellow users worldwide.
 
+Telegram: [https://t.me/laramerce/](https://t.me/laramerce/)
+
+
 ### Endless Possibilities
 With LaraMerce, your imagination is the only limit. Transform your admin panel into anything you envision, from simple dashboards to complex enterprise solutions.
 
