@@ -5,6 +5,7 @@ use App\Http\Controllers\InstallerController;
 use App\Http\Controllers\AuthController;
 use App\Models\User;
 use App\Http\Controllers\UpdateController;
+use App\Http\Controllers\PluginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,6 +67,17 @@ Route::middleware('web', 'check.installation')->group(function () {
                 Route::get('/version', [UpdateController::class, 'showVersion'])->name('settings.showVersion');
                 Route::post('/update', [UpdateController::class, 'updateApp'])->name('settings.updateApp');
            });
+
+           //PLUGINS
+           Route::prefix('/plugins')->group(function () {
+                Route::get('/list', [PluginController::class, 'addPlugin'])->name('plugins.addPlugin');
+                Route::post('/upload', [PluginController::class, 'uploadPlugin']);
+                Route::get('/install/{plugin}', [PluginController::class, 'installPlugin']);
+                Route::get('/uninstall/{plugin}', [PluginController::class, 'uninstallPlugin']);
+                Route::get('/remove/{plugin}', [PluginController::class, 'removePlugin']);
+           });
+
+           //THEMES
 
 
         });

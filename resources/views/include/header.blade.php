@@ -57,7 +57,7 @@
             border-top: 5px solid #100159;
         }
 
-        .btn-primary{
+        .btn-primary {
             background-color: #100159;
             border-color: #100159;
         }

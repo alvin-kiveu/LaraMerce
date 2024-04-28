@@ -67,16 +67,7 @@ class Menu extends Model
             [
                 'text' => 'Plugins', // Section for managing plugins
                 'icon' => 'feather icon-package',
-                'submenu' => [
-                    [
-                        'text' => 'Add Plugin',
-                        'url' => '/laradmin/plugin/add',
-                    ],
-                    [
-                        'text' => 'Installed Plugins',
-                        'url' => '/laradmin/plugin/list',
-                    ],
-                ],
+                'url' => '/laradmin/plugins/list',
             ],
             [
                 'text' => 'User Management', // Section for managing users and roles

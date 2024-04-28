@@ -7,6 +7,8 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\File;
+
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -35,6 +37,39 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
+            $this->mapPluginRoutes();
         });
+        $this->registerViews();
+    }
+
+    protected function mapPluginRoutes()
+    {
+        $pluginsPath = base_path('plugins');
+        $plugins = File::directories($pluginsPath);
+
+        foreach ($plugins as $plugin) {
+            $routeFile = $plugin . '/routes/web.php';
+
+            if (File::exists($routeFile)) {
+                Route::middleware('web')
+                    ->namespace($this->namespace)
+                    ->group($routeFile);
+            }
+        }
+    }
+
+    protected function registerViews()
+    {
+        $pluginsPath = base_path('plugins');
+        $plugins = File::directories($pluginsPath);
+
+        foreach ($plugins as $plugin) {
+            $viewsPath = $plugin . '/views';
+
+            if (File::isDirectory($viewsPath)) {
+                $this->loadViewsFrom($viewsPath, 'plugin');
+            }
+        }
     }
 }
